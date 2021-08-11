@@ -1,0 +1,20 @@
+mixin navBar(UserName, loggedIn)
+    nav
+        .container.container-flex
+            .nav-left
+                h1(class="logo") Logo
+                ul(class="nav-ul")
+                    li
+                        a(href="/") Home
+                    li 
+                        a(href="/") About
+                    li
+                        a(href="#") Concat Us
+            .nav-right
+                if loggedIn
+                    .user-control
+                        h3 #{ name }
+                else
+                    a(id="signup" href="/signup")
+                        i(class="far fa-user-circle")
+                        h3 SignUp

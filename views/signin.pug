@@ -1,0 +1,19 @@
+extend home
+
+block pageTitle
+        title Sign In
+
+append cssLinks
+    link(rel="stylesheet", href="/css/signup.css")
+
+append pageContent
+    form(action="" method="post")
+        .container.container-flex
+            h1 Sign Up
+            .email-pass-flex
+                input(type="email" placeholder="Email Address" name="email" required)
+                input(type="password" placeholder="Set A Password" name="password" required)
+            .btn-flex
+                a(href="/signup")
+                    button(class="blue larg" type="button") Regiter
+                button(class="gree larg" type="submit") Sign In

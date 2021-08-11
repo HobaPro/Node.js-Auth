@@ -1,0 +1,77 @@
+form{
+    background-color: #2d3436;
+    padding: 30px;
+    width: 40%;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px #2d3436;
+}
+
+form > .container-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form > .container-flex > h1{
+    font-size: 42px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+form > .container-flex > .fn-ln-flex{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form > .container-flex > .fn-ln-flex > input{
+    font-size: 22px;
+    height: 100%;
+    width: 100%;
+    padding: 10px 15px;
+    background: transparent;
+    border: 1px solid #a0b3b0;
+    color: #ffffff;
+    transition: border-color .25s ease, box-shadow .25s ease;
+    outline: none;
+    margin: 10px 5px;
+}
+
+form > .container-flex > .fn-ln-flex > input:focus{
+    border-color: #2ecc71;
+}
+
+form > .container-flex > .email-pass-flex{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form > .container-flex > .email-pass-flex > input{
+    font-size: 22px;
+    width: 99%;
+    padding: 10px 15px;
+    background: transparent;
+    border: 1px solid #a0b3b0;
+    color: #ffffff;
+    transition: border-color .25s ease, box-shadow .25s ease;
+    outline: none;
+    margin: 20px 5px;
+}
+
+form > .container-flex > .email-pass-flex > input:focus{
+    border-color: #2ecc71;
+}
+
+form > .container-flex > .btn-flex{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

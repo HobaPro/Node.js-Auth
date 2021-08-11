@@ -1,0 +1,19 @@
+extend home
+
+block pageTitle
+    title Sign Up
+
+append cssLinks
+    link(rel="stylesheet", href="/css/signup.css")
+
+append pageContent
+    form(action="" method="post")
+        .container.container-flex
+            h1 Sign Up
+            .fn-ln-flex
+                input(type="text" placeholder="First Name" name="firstname" required)
+                input(type="text" placeholder="Last Name" name="lastname" required)
+            .email-pass-flex
+                input(type="email" placeholder="Email Address" name="email" required)
+                input(type="password" placeholder="Set A Password" name="password" required) 
+            button(class="gree xlarg" type="submit") Get Started
